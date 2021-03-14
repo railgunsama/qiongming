@@ -1,0 +1,18 @@
+#slf4j
+logging:
+  level: info
+  file:
+    path: /logs/user
+#mysql
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/qiongming?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#mybatis
+mybatis:
+  mapper-locations: classpath:mapping/*Mapper.xml
+  type-aliases-package: com.ali.shennv.dao.entity
+
+
